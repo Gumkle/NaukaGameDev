@@ -4,8 +4,10 @@ CONFIG -= app_bundle
 CONFIG -= qt
 
 SOURCES += \
+        drawengine.cpp \
         game.cpp \
         main.cpp
 
 HEADERS += \
+    drawengine.h \
     game.h

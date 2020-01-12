@@ -4,6 +4,9 @@
 #include <conio.h>
 #include <iostream>
 
+// It's equal 1000 / FPS, for 30 FPS it's 33.33
+#define GAME_SPEED 33.33333
+
 Game::Game()
 {
 
@@ -47,7 +50,7 @@ void Game::timerUpdate()
 {
     double currentTime = clock() - lastTime;
 
-    if(currentTime < 33)
+    if(currentTime < GAME_SPEED)
     {
         return;
     }

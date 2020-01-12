@@ -1,6 +1,7 @@
 #ifndef GAME_H
 #define GAME_H
 
+#include "drawengine.h"
 
 class Game
 {
@@ -16,6 +17,8 @@ private:
     double frameCount;
     double startTime;
     double lastTime;
+
+    DrawEngine drawArea;
 };
 
 #endif // GAME_H
